@@ -3,7 +3,11 @@ let usernameui = document.getElementById('username');
 let passwordui = document.getElementById('password');
 let btnsubmit = document.querySelector('.btn-submit');
 
-function hideerror(e){
+let profileuser = document.querySelector('.user');
+
+
+// remove error input field style
+function removeerror(e){
     e.target.nextElementSibling.style.display = "none";
     e.target.style.borderColor = "#333";
 }
@@ -13,10 +17,10 @@ btnsubmit.addEventListener('click',function(e){
     let username = usernameui.value;
     let password = passwordui.value;
 
-    if(username.trim() != '' && password.trim() != ''){
+    if(username.trim() != '' && password.trim() != ''){ // check field isn't to be empty
         console.log("Access");
     }else{
-        e.preventDefault();
+        e.preventDefault(); // stop form loading when error
 
         if(username.trim() == ''){
             usernameui.nextElementSibling.style.display = 'block';
@@ -29,4 +33,9 @@ btnsubmit.addEventListener('click',function(e){
         }
     }
 
+})
+
+// show or off to logout menu
+profileuser.addEventListener('click',function(){
+    this.parentElement.classlist.toggle("active");
 })

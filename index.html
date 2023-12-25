@@ -14,7 +14,7 @@
     <div class="container">
 
         <!-- start login form -->
-        <div class="loginpage">
+        <div class="loginpage dnone">
 
             <h3 class="title">Ngwe La Min</h3>
             <p>Please login to show you are an owner.</p>
@@ -23,13 +23,13 @@
 
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" class="form-control" placeholder="Enter your name" onfocus="hideerror(event)" />
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Enter your name" onfocus="removeerror(event)" />
                     <span class="error">Name is required!</span>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" class="form-control" placeholder="Enter your password" onfocus="hideerror(event)" />
+                    <input type="text" name="password" id="password" class="form-control" placeholder="Enter your password" onfocus="removeerror(event)" />
                     <span class="error">Password is required!</span>
                 </div>
 
@@ -38,6 +38,32 @@
             </form>
         </div>
         <!-- end login form -->
+
+        <!-- start current view page -->
+        <div class="currentpage">
+
+            <div class="navbar">
+
+                <div class="nav">
+                    <div class="profile">
+                        <span class="user">Aung Aung</span>
+                        <div class="tooltip">
+                            <a href="javascript:void(0);" class="logout">Logout</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="brand">Ngwe La Min</a>
+                    <button class="btn-his">History</button>
+                </div>
+
+                <div class="lastupdatetime">
+                    <span>Last Updated :</span>
+                    <span class="date">25/12/2023</span>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end current view page -->
 
     </div>
 
