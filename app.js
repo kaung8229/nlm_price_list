@@ -3,7 +3,7 @@ let usernameui = document.getElementById('username');
 let passwordui = document.getElementById('password');
 let btnsubmit = document.querySelector('.btn-submit');
 
-let profileuser = document.querySelector('.user');
+let profileuser = document.querySelector('.profile');
 
 
 // remove error input field style
@@ -37,5 +37,5 @@ btnsubmit.addEventListener('click',function(e){
 
 // show or off to logout menu
 profileuser.addEventListener('click',function(){
-    this.parentElement.classlist.toggle("active");
+    this.classList.toggle("active");
 })

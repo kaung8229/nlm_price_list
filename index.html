@@ -39,31 +39,123 @@
         </div>
         <!-- end login form -->
 
-        <!-- start current view page -->
-        <div class="currentpage">
+        <!-- start navbar -->
+        <div class="navbar">
 
-            <div class="navbar">
-
-                <div class="nav">
-                    <div class="profile">
-                        <span class="user">Aung Aung</span>
-                        <div class="tooltip">
-                            <a href="javascript:void(0);" class="logout">Logout</a>
-                        </div>
+            <div class="nav">
+                <a href="javascript:void(0);" class="brand">Ngwe La Min</a>
+                <div class="profile">
+                    <span class="user">Aung Aung</span>
+                    <div class="tooltip">
+                        <a href="javascript:void(0);" class="logout">Logout</a>
                     </div>
-                    <a href="javascript:void(0);" class="brand">Ngwe La Min</a>
-                    <button class="btn-his">History</button>
                 </div>
+            </div>
 
-                <div class="lastupdatetime">
-                    <span>Last Updated :</span>
-                    <span class="date">25/12/2023</span>
-                </div>
-
+            <div class="lastupdatetime">
+                <p>Last Updated : <span class="date">25/12/2023</span></p>
+                <button class="btn-his">History</button>
             </div>
 
         </div>
-        <!-- end current view page -->
+        <!-- end navbar -->
+
+        <!-- start price view section -->
+        <div class="pricesection">
+
+            <!-- start view section -->
+            <div class="viewsection">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 5%;">No.</th>
+                            <th>Name</th>
+                            <th style="width: 20%;">Type</th>
+                            <th style="width: 20%;">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 5%;">1</td>
+                            <td>Ngwe Kyal Pwint</td>
+                            <td style="width: 20%;">24 Pyi</td>
+                            <td style="width: 20%;">185000</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%;">1</td>
+                            <td>Ngwe Kyal Pwint</td>
+                            <td style="width: 20%;">24 Pyi</td>
+                            <td style="width: 20%;">185000</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%;">1</td>
+                            <td>Ngwe Kyal Pwint</td>
+                            <td style="width: 20%;">24 Pyi</td>
+                            <td style="width: 20%;">185000</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%;">1</td>
+                            <td>Ngwe Kyal Pwint</td>
+                            <td style="width: 20%;">24 Pyi</td>
+                            <td style="width: 20%;">185000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- <div class="dateline">
+                    <div class="line"></div>
+                    <span>25/12/2023</span>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 5%;">No.</th>
+                            <th>Name</th>
+                            <th style="width: 20%;">Type</th>
+                            <th style="width: 20%;">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 5%;">1</td>
+                            <td>Ngwe Kyal Pwint</td>
+                            <td style="width: 20%;">24 Pyi</td>
+                            <td style="width: 20%;">185000</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+            <!-- end view section -->
+
+            <!-- start update section -->
+            <div class="updatesection dnone">
+
+                <h3 class="title">Update Price</h3>
+
+                <form class="updateform" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="nkp24">Ngwe Kyal Pwint - 12 Pyi</label>
+                        <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nkp24">Ngwe Kyal Pwint</label>
+                        <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                    </div>
+
+                    <button type="submit" class="btnupdate">Update</button>
+
+                </form>
+            </div>
+            <!-- end update section -->
+
+        </div>
+        <!-- end price view section -->
+
+
+        
 
     </div>
 
