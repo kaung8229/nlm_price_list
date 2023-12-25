@@ -1,0 +1,92 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #f1f1f1;
+    --black: #333;
+}
+
+.container{
+    position: relative;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 100px 0 30px;
+
+    color: var(--black);
+}
+
+/* start login page */
+.loginpage{
+    text-align: center;
+
+    display: grid;
+    place-items: center;
+}
+.loginpage .title{
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+.loginpage > p{
+    margin: 8px 0 40px;
+}
+
+.loginform{
+    padding: 40px 30px;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px solid rgba(0,0,0,0.3)
+}
+.loginform .form-group{
+    position: relative;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group label{
+    margin-right: 40px;
+}
+.form-group .form-control{
+    width: 250px;
+    padding: 12px 20px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    font-size: 15px;
+}
+.form-group .error{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+.btn-submit{
+    margin-left: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: royalblue;
+    color: var(--white);
+    display: block;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    opacity: 0.8;
+}
+/* end login page */
+
