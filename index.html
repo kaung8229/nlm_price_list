@@ -14,10 +14,10 @@
     <div class="container">
 
         <!-- start login form -->
-        <div class="loginpage dnone">
+        <div class="loginpage">
 
             <h3 class="title">Ngwe La Min</h3>
-            <p>Please login to show you are an owner.</p>
+            <p>Please login to describe owner or user.</p>
 
             <form class="loginform" action="#" method="post">
 
@@ -29,7 +29,7 @@
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" class="form-control" placeholder="Enter your password" onfocus="removeerror(event)" />
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" onfocus="removeerror(event)" />
                     <span class="error">Password is required!</span>
                 </div>
 
@@ -39,120 +39,182 @@
         </div>
         <!-- end login form -->
 
-        <!-- start navbar -->
-        <div class="navbar">
+        
+        <div class="accesspage dnone">
+            <!-- start navbar -->
+            <div class="navbar">
 
-            <div class="nav">
-                <a href="javascript:void(0);" class="brand">Ngwe La Min</a>
-                <div class="profile">
-                    <span class="user">Aung Aung</span>
-                    <div class="tooltip">
-                        <a href="javascript:void(0);" class="logout">Logout</a>
+                <div class="nav">
+                    <a href="javascript:void(0);" class="brand">Ngwe La Min</a>
+                    <div class="profile">
+                        <span class="user">Aung Aung</span>
+                        <div class="tooltip">
+                            <a href="javascript:void(0);" class="logout">Logout</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="lastupdatetime">
-                <p>Last Updated : <span class="date">25/12/2023</span></p>
-                <button class="btn-his">History</button>
-            </div>
-
-        </div>
-        <!-- end navbar -->
-
-        <!-- start price view section -->
-        <div class="pricesection">
-
-            <!-- start view section -->
-            <div class="viewsection">
-                <table>
-                    <thead>
-                        <tr>
-                            <th style="width: 5%;">No.</th>
-                            <th>Name</th>
-                            <th style="width: 20%;">Type</th>
-                            <th style="width: 20%;">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="width: 5%;">1</td>
-                            <td>Ngwe Kyal Pwint</td>
-                            <td style="width: 20%;">24 Pyi</td>
-                            <td style="width: 20%;">185000</td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">1</td>
-                            <td>Ngwe Kyal Pwint</td>
-                            <td style="width: 20%;">24 Pyi</td>
-                            <td style="width: 20%;">185000</td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">1</td>
-                            <td>Ngwe Kyal Pwint</td>
-                            <td style="width: 20%;">24 Pyi</td>
-                            <td style="width: 20%;">185000</td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">1</td>
-                            <td>Ngwe Kyal Pwint</td>
-                            <td style="width: 20%;">24 Pyi</td>
-                            <td style="width: 20%;">185000</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- <div class="dateline">
-                    <div class="line"></div>
-                    <span>25/12/2023</span>
+                <div class="lastupdatetime dnone">
+                    <p>Last Updated : <span class="date">25/12/2023</span></p>
+                    <button class="btn-his">History</button>
                 </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th style="width: 5%;">No.</th>
-                            <th>Name</th>
-                            <th style="width: 20%;">Type</th>
-                            <th style="width: 20%;">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="width: 5%;">1</td>
-                            <td>Ngwe Kyal Pwint</td>
-                            <td style="width: 20%;">24 Pyi</td>
-                            <td style="width: 20%;">185000</td>
-                        </tr>
-                    </tbody>
-                </table> -->
             </div>
-            <!-- end view section -->
+            <!-- end navbar -->
 
-            <!-- start update section -->
-            <div class="updatesection dnone">
+            <!-- start price view section -->
+            <div class="pricesection">
 
-                <h3 class="title">Update Price</h3>
+                <!-- start view section -->
+                <div class="viewsection dnone">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">No.</th>
+                                <th>Name</th>
+                                <th style="width: 20%;">Type</th>
+                                <th style="width: 20%;">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 5%;">1</td>
+                                <td>Ngwe Kyal Pwint</td>
+                                <td style="width: 20%;">24 Pyi</td>
+                                <td style="width: 20%;">185000</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 5%;">1</td>
+                                <td>Ngwe Kyal Pwint</td>
+                                <td style="width: 20%;">24 Pyi</td>
+                                <td style="width: 20%;">185000</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 5%;">1</td>
+                                <td>Ngwe Kyal Pwint</td>
+                                <td style="width: 20%;">24 Pyi</td>
+                                <td style="width: 20%;">185000</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 5%;">1</td>
+                                <td>Ngwe Kyal Pwint</td>
+                                <td style="width: 20%;">24 Pyi</td>
+                                <td style="width: 20%;">185000</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <form class="updateform" action="#" method="post">
-
-                    <div class="form-group">
-                        <label for="nkp24">Ngwe Kyal Pwint - 12 Pyi</label>
-                        <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                    <!-- <div class="dateline">
+                        <div class="line"></div>
+                        <span>25/12/2023</span>
                     </div>
 
-                    <div class="form-group">
-                        <label for="nkp24">Ngwe Kyal Pwint</label>
-                        <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
-                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">No.</th>
+                                <th>Name</th>
+                                <th style="width: 20%;">Type</th>
+                                <th style="width: 20%;">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 5%;">1</td>
+                                <td>Ngwe Kyal Pwint</td>
+                                <td style="width: 20%;">24 Pyi</td>
+                                <td style="width: 20%;">185000</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+                <!-- end view section -->
 
-                    <button type="submit" class="btnupdate">Update</button>
+                <!-- start update section -->
+                <div class="updatesection">
 
-                </form>
+                    <h3 class="title">Update Price</h3>
+
+                    <button type="button" class="btnnewitem">New item</button>
+
+                    <form class="updateform" action="#" method="post">
+
+                        <div class="updateitems">
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint - 12 Pyi</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nkp24">Ngwe Kyal Pwint</label>
+                                <input type="number" name="nkp24" id="nkp24" class="form-control" min="0" placeholder="Enter new price" />
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btnupdate">Update</button>
+
+                    </form>
+                </div>
+                <!-- end update section -->
+
             </div>
-            <!-- end update section -->
-
+            <!-- end price view section -->
         </div>
-        <!-- end price view section -->
 
 
         
